@@ -1,0 +1,26 @@
+.button-group-homepage {
+    display: flex; /* Utiliza flexbox para alinear los botones en fila */
+    justify-content: flex-end; /* Alinear a la derecha */
+    margin-top: 20px; /* Espacio superior */
+}
+.button-group .btn {
+    text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+}
+
+.btn {
+    margin-left: 10px; /* Espacio entre los botones */
+    padding: 10px 15px; /* Espaciado interno de los botones */
+    background-color: white; /* Color de fondo blanco */
+    color: black; /* Color del texto negro */
+    border: 2px solid black; /* Borde negro */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin-right: 10px; /* Ajusta este valor para moverlo horizontalmente */
+    margin-top: 10px; /* Espacio superior para moverlo más abajo */
+}
+
+
+.btn:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el ratón (opcional) */
+}

@@ -1,0 +1,171 @@
+.conocenos-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/imag/conocenosfondo.png');
+    padding: 20px;
+    overflow-y: auto; /* Para que el contenido sea desplazable si es largo */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.titulo-conocenos {
+    font-size: 45px;
+    text-align: left;
+    margin-bottom: 5px;
+    color: black; /* Texto en negro */
+
+    margin-top: -20px; /* Ajusta este valor para moverlo más arriba */
+    text-shadow: 
+    -1px -1px 0 rgba(242, 242, 242, 0.7),  
+     1px -1px 0 rgba(255, 255, 255, 0.7),  
+    -1px  1px 0 rgba(251, 246, 246, 0.7), 
+     1px  1px 0 rgba(255, 255, 255, 0.7);
+
+}
+.titulo-inmoclick {
+    font-size: 45px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: black; /* Texto en negro */
+
+    margin-left: 200px; /* Ajusta este valor para moverlo horizontalmente */
+    margin-top: 0; /* Eliminar el espacio superior para que quede más pegado a Conócenos */
+    margin-bottom: 20px; /* Ajustar el espacio antes del contenido, puedes cambiarlo si lo prefieres */
+    text-shadow: 
+    -1px -1px 0 rgba(242, 242, 242, 0.7),  
+     1px -1px 0 rgba(255, 255, 255, 0.7),  
+    -1px  1px 0 rgba(251, 246, 246, 0.7), 
+     1px  1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.subtitulo {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las columnas */
+}
+.cuadro-texto {
+    background-color: white;
+    border: 2px solid black; /* Borde grueso negro */
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 90%;
+    text-align: center; 
+    
+}
+.cuadro-textod {
+    background-color: white;
+    border: 2px solid black; /* Borde grueso negro */
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 90%;
+    text-align: center; 
+    height: 140px; 
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Asegura que el contenido esté centrado verticalmente también, si es necesario */
+    display: flex; /* Permite centrar el contenido */
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    
+}
+.cuadro-textomv {
+    background-color: white;
+    border: 2px solid black; /* Borde grueso negro */
+    height: 40px; 
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 90%;
+    text-align: center; 
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Asegura que el contenido esté centrado verticalmente también, si es necesario */
+    display: flex; /* Permite centrar el contenido */
+    flex-direction: column; /* Alinea el contenido verticalmente */
+}
+
+/* Esta clase se aplica directamente al subtítulo */
+.cuadro-centrado {
+    text-align: center; /* Centra solo el texto dentro de este título */
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+.columna {
+    width: 40%; /* Ajusta el ancho de las columnas */
+    flex: 1; /* Permite que ambas columnas ocupen el mismo espacio */
+    padding: 10px; /* Ajusta el espacio interior para reducir la separación */
+}
+
+.descripcion {
+    border: 2px solid black; /* Borde para el cuadro de descripción */
+    flex: 1; /* Permite que ambas columnas ocupen el mismo espacio */
+    padding: 10px; /* Ajusta el espacio interior para reducir la separación */
+}
+.contenido {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las columnas */
+}
+.texto {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black; /* Texto en negro */
+    
+}
+.textomv {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black; /* Texto en negro */
+    font-weight: bold; /* Para negrita */
+}
+
+.cuadro-texto h2.subtitulo {
+    margin: 0; /* Elimina márgenes innecesarios en los subtítulos */
+}
+.cuadro-textou {
+    background-color: white;
+    border: 2px solid black; /* Borde grueso negro */
+    padding: 5px; /* Ajusta el padding según sea necesario */
+    margin-bottom: 20px;
+    display: flex; /* Permite centrar el contenido */
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    font-weight: bold; /* Para negrita */
+
+}
+.centradou {
+    text-align: center; /* Centra el texto en el cuadro */
+    margin: 20px 0; /* Espacio superior e inferior para separar del contenido */
+    width: 90%; /* Ajusta el ancho según lo desees */
+    margin-left: auto; /* Centra horizontalmente el cuadro en el contenedor */
+    margin-right: auto; /* Centra horizontalmente el cuadro en el contenedor */
+    padding: 10px; /* Ajusta el padding para el cuadro */
+    height: 30px; 
+    justify-content: center; /* Asegura que el contenido esté centrado verticalmente también, si es necesario */
+    display: flex; /* Permite centrar el contenido */
+    flex-direction: column; /* Alinea el contenido verticalmente */
+
+}
+.boton-regresar {
+    position: fixed; /* Mantiene el botón en la parte inferior derecha */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la parte derecha */
+    background-color: #010810; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.boton-regresar:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

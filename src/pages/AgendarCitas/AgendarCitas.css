@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+}
+
+header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #1a1a1a;
+  font-weight: normal;
+}
+
+.cita-container {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.inmueble-info {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.arrendador {
+  margin-bottom: 10px;
+}
+
+.casa-img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+select,
+input[type="number"],
+input[type="time"] {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.calendario {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+#calendario {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.agendar {
+  background-color: #007bff;
+  color: white;
+}
+
+button.cancelar {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.agendar:hover {
+  background-color: #0056b3;
+}
+
+button.cancelar:hover {
+  background-color: #cc0000;
+}

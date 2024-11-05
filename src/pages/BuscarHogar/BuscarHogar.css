@@ -1,0 +1,104 @@
+.buscar-hogar-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+  }
+  
+  .user-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .user-info .icon {
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  .description {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .property-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .property-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .property-details {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .property-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .property-description {
+    flex-grow: 1;
+  }
+  
+  .property-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .property-actions button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .property-actions button:hover {
+    background-color: #555;
+  }
+  

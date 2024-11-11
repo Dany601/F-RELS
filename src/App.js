@@ -1,13 +1,14 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Importamos los estilos globales
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Módulo para manejar las rutas
 import ButtonGroup from './components/ButtonGroup'; // Importamos el componente de los botones
 import Conocenos from './pages/Conocenos'; // Importamos la nueva página vacía
-import Login from './pages/Login'; // Importamos la página de Login
 import LoginWithGoogle from './pages/LoginWithGoogle'; // Importamos la nueva página para LoginWithGoogle
 import Lessor from './pages/Lessor';
 import Arrendatarios from './pages/Arrendatarios/Arrendatarios';
 import BuscarHogar from './pages/BuscarHogar/BuscarHogar';
+import Login from './pages/Login';
 
 function App() {
     return (
@@ -40,17 +41,17 @@ function App() {
                         path="/login" 
                         element={
                             <div className="content">
-                                <Login />
+                                <LoginWithGoogle />
                             </div>
                         } 
                     />
 
-                    {/* Página de "Login with Google" */}
+                    {/* registración*/}
                     <Route 
-                        path="/login-with-google" 
+                        path="/register" 
                         element={
                             <div className="content">
-                                <LoginWithGoogle />
+                                <Login />
                             </div>
                         } 
                     />

@@ -15,6 +15,14 @@
     align-items: center;
 }
 
+.message {
+    background-color: #1618aa;
+    padding: 5px;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
 /* Título principal "Bienvenido a InmoClick" */
 h1 {
     font-size: 50px;
@@ -106,9 +114,7 @@ h5 {
 
 
 /* Estilos de los inputs del formulario */
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input, select{
     width: calc(100% - 20px); /* Ajusta el ancho para incluir el padding */
     padding: 10px; /* Espaciado interno */
     border: 1px solid #ccc; /* Borde gris claro */
@@ -194,6 +200,7 @@ button:hover {
 .input-group input {
     flex: 2; /* Asegura que los inputs ocupen el espacio adecuado */
 }
+
 .input-groupp label {
     display: block; /* Asegura que la etiqueta ocupe toda la línea */
     text-align: left; /* Alinear texto a la izquierda */

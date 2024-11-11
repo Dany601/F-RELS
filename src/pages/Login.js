@@ -8,9 +8,9 @@ import axiosClient from '../config/axios';
 
 function Login() {
     const navigate = useNavigate(); // Inicializa useNavigate
+    const [message, setMessage] = useState("");
         // Estados para los campos del formulario
-        
-
+    
         const [dataform, setdataform]=useState({
             name:"",
             lastname:"",
@@ -39,35 +39,38 @@ function Login() {
                 
                     const respuesta = await axiosClient.post("/User", dataform);
                     console.log(respuesta);
-                    
+
+                    setMessage("Cuenta creada! inicia sesión!");
+
+                    setTimeout(() => {
+                        navigate("/login");
+                    }, 2000);
                     
                 } catch (error) {
                     console.log(error);
+                    setMessage("Asegurate que los campos están bien")
                 }
 
 
-                // Redirige según el rol seleccionado
-                if (dataform.usertypeid === '1') {
-                    navigate('/lessor'); // Redirige a la página de arrendador
-                } else if (dataform.usertypeid === '4') {
-                    navigate('/arrendatarios'); // Redirige a la página de arrendatario
-                }
+                // // Redirige según el rol seleccionado
+                // if (dataform.usertypeid === '1') {
+                //     navigate('/lessor'); // Redirige a la página de arrendador
+                // } else if (dataform.usertypeid === '4') {
+                //     navigate('/arrendatarios'); // Redirige a la página de arrendatario
+                // }
            
         };
     
 
     const handleBack = () => {
-        navigate(-1); // Regresa a la página anterior
+        navigate("/login"); // Regresa a la página anterior
     };
     // Aquí defines la nueva función
-    const handleGoogleSignup = () => {
-        navigate('/login-with-google'); // Redirige a la nueva página
-    };
+     
     return (
     
-        <div className="login">
-            <h1>Bienvenido a InmoClick</h1>
-            <hr className="separator-login" />
+        <div className="login lessor-img">
+             
             <div className="content">
                 <div className="left-column">
                     <h2>Encuentra el hogar de tus sueños</h2>
@@ -116,16 +119,9 @@ function Login() {
                 </div>
                 <div className="right-column">
                     <div className="signup-form">
-                        <h3>Sign Up & Start Your Trial</h3>
-                        <div className="quick-signup-line">
-                            <span>Quick Sign Up</span>
-                        </div>
-                        <button className="google-signup-button" onClick={handleGoogleSignup}>Sign in with your Email</button>
-                        
+                        <h2 className='text-center'>Registrate!</h2>
                         <form onSubmit={handleSubmit}>
-                            <p style={{ fontSize: '12px', color: '#666', textAlign: 'center', margin: '10px 0' }}>
-                                Or use your email address
-                            </p>
+                             
                             <div className="input-group" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
                                 <div style={{ width: '45%' }}>                                
                                 
@@ -141,10 +137,12 @@ function Login() {
                                 <label htmlFor="correo">Correo </label>
                                 <input type="email" id="correo" name="email" value={dataform.email} onChange={handleChange} required />
                             </div>
+
                             <div className="input-groupp">
                                 <label htmlFor="contraseña">Contraseña </label>
                                 <input type="password" id="contraseña" name="password" value={dataform.password} onChange={handleChange} required />
                             </div>
+                            
                             <div className="input-groupp">
                                 <label htmlFor="Identificacion">Identificacion </label>
                                 <input type="number" id="Identificacion" name="identification" value={dataform.identification} onChange={handleChange} required />
@@ -153,10 +151,19 @@ function Login() {
                                 <label htmlFor="Telefono">Telefono </label>
                                 <input type="number" id="Telefono" name="cellphonenumber" value={dataform.cellphonenumber} onChange={handleChange} required />
                             </div>
+
                             <div className="input-groupp">
                                 <label htmlFor="TipoIdentificacion">TipoIdentificacion </label>
-                                <input type="number" id="TipoIdentificacion" name="typedocument" value={dataform.typedocument} onChange={handleChange} required />
+                                {/* <input type="number" id="TipoIdentificacion" name="typedocument" value={dataform.typedocument} onChange={handleChange} required /> */}
+                                <select required onChange={handleChange} name='typedocument' value={dataform.typedocument}>
+                                    {!dataform.typedocument && (
+                                        <option disabled value="">Selecciona un tipo de documento</option>
+                                    )}
+                                    <option value="1">CC</option>
+                                </select>
                             </div>
+
+
                             <p style={{ fontSize: '12px', color: '#666', textAlign: 'left', margin: '10px 0' }}>
                                 Elige tu Rol
                             </p>
@@ -174,6 +181,7 @@ function Login() {
                                     </label>
                                 </div>
                             </div>
+                            {message ? <p className='message'>{message}</p> : ""}
                             <button type="submit">Crear Cuenta</button>
                             <button type="button" onClick={handleBack} style={{ marginLeft: '10px' }}>Regresar</button> {/* Botón "Anterior" */}
                         </form>
@@ -184,4 +192,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Login;

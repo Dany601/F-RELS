@@ -73,7 +73,7 @@ function Lessor() {
 
                 <div className="right-column">
                     <div className="arrendador-form">
-                        <h11>ARRENDADOR</h11>
+                        <h2 className='title-lessor'>ARRENDADOR</h2>
                         <div className="quick-signup-line">
                             <span>Documentación</span>
                         </div>

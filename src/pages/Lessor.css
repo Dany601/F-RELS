@@ -22,7 +22,10 @@
     text-align: left; /* Alinear a la izquierda */
     width: 100%; /* Asegura que el título ocupe todo el ancho */
 }
-
+.title-lessor {
+    text-align: center;
+    color: #000000;
+}
 .subtitulo-lessor {
     font-size: 20px;
     font-weight: bold; /* Negrita */

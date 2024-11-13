@@ -7,12 +7,13 @@
     height: 100vh;
     padding: 20px;
     overflow-y: auto; 
-    background-color: hsl(0, 0%, 35%); /* Color de fondo gris claro */
     padding: 20px;
     min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('../assets/imag/fondoedif.jpg'); /* Ruta de la imagen */
+    background: linear-gradient(135deg, #3604ffe6, #3ab64b);
 }
 
 .message {
@@ -37,6 +38,7 @@ h2 {
     color: #ffffff; /* Color blanco para el título */
     text-align: left; /* Alinear a la izquierda */
     width: 100%; /* Asegura que el título ocupe todo el ancho */
+    justify-content:left ;
 }
 h3 {
     font-size: 20px;

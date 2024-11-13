@@ -23,7 +23,7 @@ function Login() {
         })
     
 
-        // Función para manejar la selección del rol
+        // Función para manejar
         const handleChange = (event) => {
             setdataform({...dataform, [event.target.name] : event.target.value});
             console.log(dataform);
@@ -73,11 +73,11 @@ function Login() {
              
             <div className="content">
                 <div className="left-column">
-                    <h2>Encuentra el hogar de tus sueños</h2>
-                    <h5>
+                    <h1>Encuentra el hogar de tus sueños</h1>
+                    <h2>
                         Descubre tu nuevo hogar con InmoClick. Explora una amplia variedad de propiedades en Chía con imágenes de alta calidad y descripciones detalladas. 
                         ¡Visualiza cada espacio como si ya estuvieras viviendo allí! Nuestra plataforma te permite filtrar tu búsqueda por precio, tamaño, ubicación.
-                    </h5>
+                    </h2>
                     <h3 style={{ textAlign: 'left', textDecoration: 'underline', color: '#ffffff' }}>
                     <span style={{
                         display: 'inline-block',

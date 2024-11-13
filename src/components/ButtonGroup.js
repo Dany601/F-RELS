@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importamos Link para hacer la navegación
 import './ButtonGroup.css'; // Importar el archivo de estilos
 import homePageImage from "../assets/imag/OIG4.jpg"
 import image1 from "../assets/imag/slide_1.png";
@@ -15,8 +14,7 @@ function ButtonGroup() {
                                 <h1><a href="/">Inmo<span>Click</span></a></h1>
                                 <nav role="navigation" className='m-0'>
                                     <ul>
-                                        <li><a href="/lessor" >Comprar</a></li>
-                                        <li><a href="/arrendatarios">Arrendar</a></li>
+                                        <li><a href="/buscar-hogar">Arrendar</a></li>
                                          
                                         <li class="cta"><a href="/login">INICIAR SESIÓN</a></li>
                                     </ul>

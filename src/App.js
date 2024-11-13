@@ -59,6 +59,7 @@ function App() {
                     <Route path="/lessor" element={<Lessor />} />
                     <Route path="/arrendatarios" element={<Arrendatarios />} />
                     <Route path="/buscar-hogar" element={<BuscarHogar />} />
+
                 </Routes>
             </div>
         </Router>

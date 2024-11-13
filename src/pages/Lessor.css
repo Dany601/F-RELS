@@ -7,7 +7,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('../assets/imag/OIG4.jpg'); /* Ruta de la imagen */
+    background-image: url('../assets/imag/fondologinn.jpg'); /* Ruta de la imagen */
     background-size: cover; /* Ajusta la imagen para cubrir toda la página */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen */
@@ -324,7 +324,7 @@ form input[type="text"], form input[type="file"] {
     background-color: #f9f9f9;
     font-size: 14px;
     resize: none; /* Evita que el cuadro de texto se redimensione */
-    height: 15px;
+    height: 60px;
 }
 /* Campo para Dirección o Ubicación */
 .location-section {
@@ -335,7 +335,7 @@ form input[type="text"], form input[type="file"] {
 
 .location-label {
     display: block;
-    font-size: 0px;
+    font-size: 14px;
     color: #333;
     margin-bottom: 5px;
     
@@ -356,11 +356,32 @@ form input[type="text"], form input[type="file"] {
     justify-content: space-between;
     margin-bottom: 15px;
 }
-
+.altitude-latitude-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 .cost-section, .phone-section {
     width: 48%;
 }
-
+.altitude-section, .latitude-section {
+    width: 97%;
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+}
+.altitude-label, .latitude-label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    font-size: 15px; /* Ajusta el tamaño según tu preferencia */
+    margin-bottom: 5px;
+}
+.altitude-input, .latitude-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px
+}
 .cost-label, .phone-label {
     display: block;
     font-size: 14px;

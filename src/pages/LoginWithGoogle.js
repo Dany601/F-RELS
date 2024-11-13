@@ -59,8 +59,8 @@ function LoginWithGoogle() {
             <div className="login lessor-img">
                 <div className="content">
                     <div className="left-column">
-                        <h2>Inicia sesión con tu Correo Electronico</h2>
-                        <p>Introduce tu nombre de usuario y contraseña para continuar.</p>
+                        <h1>Inicia sesión con tu Correo Electronico</h1>
+                        <h2>Introduce tu nombre de usuario y contraseña para continuar.</h2>
                         <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '10px' }}>
                             <img src={require('../assets/imag/imagen1.jpg')} alt="Imagen 1" 
                             style={{ width: '300px', marginRight: '30px', transition: 'transform 0.5s ease' }}
